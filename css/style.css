@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
 body {
     background: linear-gradient(102deg, rgb(32, 30, 32) 60%,  rgb(48, 76, 122) 85%) no-repeat;
     font-size: 1.1em;
@@ -5,6 +10,7 @@ body {
     text-align: justify;
     font-family: "Times New Roman", serif;
     min-height: 100vh;
+    font-family: Montserrat;
 }
 
 * {
@@ -86,7 +92,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: rgb(224, 169, 109);;
+    color: rgb(224, 169, 109);
 }
 
 button{
