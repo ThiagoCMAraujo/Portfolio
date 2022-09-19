@@ -5,37 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="navbar.html">
+
+    <script src="jquery.js"></script>
+    <script src="load-components.js"></script>
     <title>Home</title>
 </head>
 
 <body>
     <div class="grid-template">
 
-
-        <header>
-            <nav>
-                <div class="about-me" style="float: left;" >
-                    <h1 class="about-me" style="color: rgb(32, 30, 32);">
-                        About Me
-                    </h1>
-                </div>
-                <ul style="float: right;;">
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li><a href="#contact" class="secondary-color">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main">
-
+        <div id="load-navbar"></div>
+            <div class="main">
+            
             <div id="introduction">
                 <div style="text-align: center;">
                     
                     <img id="about-me-image" style=" margin-right: 5vw" src="img/perfil-rounded.png" alt="">
-
-                        <p class="secondary-color" style="text-transform: uppercase;  margin: 3px; font-size: 0.9em; ">Hi there,</p>
-                        <h1 class="primary-color" style="font-size: 1.1em;  margin: 3px;"> I'm a back-end developer</h1>
+                    
+                    <p class="secondary-color" style="text-transform: uppercase;  margin: 3px; font-size: 0.9em; ">Hi there,</p>
+                    <h1 class="primary-color" style="font-size: 1.1em;  margin: 3px;"> I'm a back-end developer</h1>
                         <p style="margin: 3px; font-size: 0.8em;">My name is Thiago, I'm currently an undergraduate student in Software Engineering. During 2,5 years, I've had experience with JAVA, PHP and right now I'm learning about TypeScript. I've also had experience with microservices architecture, message queuing and distributed database. </p>
                 </div>
             </div>
@@ -60,7 +51,14 @@
                         <a href="https://www.linkedin.com/in/thiagocmaraujo/" class="secondary-color">thiagocmaraujo</a>
                     </p>
                 </div>
-                <div style="margin-top: 1%;">
+                
+                <div style="margin-top: .2%;">
+                    <img src="img/github.png" alt="Github Icon" id="github">
+                    <p class="secondary-color" style="text-align: left; display: inline; vertical-align: super;">
+                        <a href="https://github.com/ThiagoCMAraujo" class="secondary-color" >ThiagoCMAraujo</a>
+                    </p>
+                </div>
+                <div style="margin-top: .3%;">
                     <img id="gmail" src="img/gmail.png" alt="Gmail Icon" >
                     <p class="secondary-color" style="text-align: left; display: inline;">
                         tmelo387@gmail.com
@@ -68,13 +66,7 @@
                 </div>
             </div>            
         </div>
-        <footer style="text-align: center;" class="footer-custom"> <h4 class="footer-content primary-color"> Porfolio By <a class="primary-color" href="https://github.com/ThiagoCMAraujo" target="_blank">Thiago</a></h4> 
-        </footer>
-        
-        
-        
+        <div id="load-footer"></div>        
     </div>
 </body>
-        
-        
 </html>
